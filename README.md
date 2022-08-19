@@ -1,7 +1,7 @@
 # BdOIAdminScripts
 ## `create_admins.py`
 Create a CSV file named `admin.csv` with the credentials in the
-following format:
+following format (first line will be ignored):
 ```
 first_name,last_name,username,password
 ```
@@ -11,7 +11,7 @@ actual ID of the contest (Note: this can be different from the number given to
 
 ## `create_users.py`
 Create a CSV file named `users.csv` with the credentials in the
-following format:
+following format (first line will be ignored):
 ```
 first_name,last_name,class,email
 ```
