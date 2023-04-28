@@ -294,6 +294,7 @@ int main(int argc, char* argv[]) {
 using namespace std;
 
 int main(int argc, char **argv) { 
+  signal(SIGPIPE, SIG_IGN);
   FILE *to_user = fopen(argv[2], "w");
   FILE *from_user = fopen(argv[1], "r");
   setvbuf(to_user, NULL, _IONBF, 0);

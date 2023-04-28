@@ -9,7 +9,7 @@ from cmscontrib.AddUser import add_user
 from cmscontrib.AddParticipation import add_participation
 from cmscontrib.AddTeam import add_team
 
-# Format: first_name,last_name,class,email
+# Format: first_name, last_name, grade, email, username, password 
 csv_file = open("users.csv", "r") 
 csv_reader = csv.reader(csv_file, delimiter=',')
 next(csv_reader)
